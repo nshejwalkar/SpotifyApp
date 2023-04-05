@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<h1> Here is your new playlist: </h1>
+{% endblock %}
+
+{% block body %}
+<ul>
+   {% for output, link in songs %}
+   <li><p> {{ output }} {{ link }} </p></li>
+   {% endfor %}
+</ul>
+{% endblock %}
