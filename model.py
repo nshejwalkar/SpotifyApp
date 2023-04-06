@@ -8,7 +8,7 @@ import os
 
 load_dotenv()
 
-bigdf = pd.read_csv('./data/final100.csv')
+bigdf = pd.read_csv('./data/final1000.csv')
 bigdf.drop(columns=['Unnamed: 0'], inplace=True)
 
 cid = os.getenv('client_ID')
